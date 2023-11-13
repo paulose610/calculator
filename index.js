@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
         op=cc;
         let s=res.toString();
         if (s.length>10 && s.includes(".")){
-            if (Number(s)>10000000) s=(+s).toFixed(2).toString()
-            else s=(+s).toFixed(5).toString()
+            s=(+s).toFixed(2).toString()
+            //else s=(+s).toFixed(5).toString()
         }
         
         if (s.includes(".")){dec=false}
