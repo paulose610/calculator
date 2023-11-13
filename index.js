@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function del(){
         let s=otpt2.textContent.slice(len-1,len);
-        if (ops.includes(s)){optr=true;n1=null;n2=null}
+        if (ops.includes(s)){optr=true;if(n1.toString().split("").includes(".")){dec=false};n1=null;n2=null}
         else if (s==="."){dec=true;}
         if (n2!=null){n2=n2.slice(0,n2.length-1)}
         else {n1=null}       
