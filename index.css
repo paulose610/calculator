@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center
+}
+
+.cal{
+    display: block;
+    max-width: 430px;
+    outline : 3px solid black;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: rgba(34, 92, 166, 0.38);
+    
+}
+
+.screen{
+    margin-top: 27px;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    align-items: center;
+    outline: 3px solid black;
+    margin-left: 27px;
+    border-radius: 6px;
+}
+
+.screen>*{
+   width: 370px;
+   height: 70px;
+   background-color: rgb(76, 109, 117);
+   outline: 0px solid green;
+}
+
+.screen #sb2{
+    text-align: right;
+    font-size: 43px;
+}
+.screen #sb1{
+    font-size: 22px;
+}
+
+#sb2 p{margin-right: 15px;}
+#sb1 p{margin-left: 15px;}
+
+.btns{
+    outline: 0px solid red;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 27px;
+}
+
+.btns>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*background-color: #121d24;*/
+    box-sizing: border-box;
+    width: 77px;
+    height: 70px;
+    padding: 0px; 
+    outline: 3px solid black;
+    flex: 1 1 1;
+    margin-top:23px;
+    margin-left: 23px;
+    border: 0px;
+}
+
+.btns .rhs{
+    margin-right: 23px;
+}
+
+.btns #eql{
+    width: 77px;
+}
+
+.clr,.dlt{
+    width: 127px;
+}
+
